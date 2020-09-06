@@ -115,7 +115,9 @@ class SleepTrackerFragment : Fragment() {
                 adapter.submitList(it)
             }
         })
-        
+
+        val manager = GridLayoutManager(activity, 3)
+        binding.sleeplist.layoutManager = manager
         return binding.root
     }
 }
