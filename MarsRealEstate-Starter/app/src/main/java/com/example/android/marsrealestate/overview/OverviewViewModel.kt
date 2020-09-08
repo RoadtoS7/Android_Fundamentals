@@ -66,4 +66,8 @@ class OverviewViewModel : ViewModel() {
             }
         }
     }
+
+    fun updateFilter(filter: MarsApiFilter){
+        getMarsRealEstateProperties(filter)
+    }
 }
