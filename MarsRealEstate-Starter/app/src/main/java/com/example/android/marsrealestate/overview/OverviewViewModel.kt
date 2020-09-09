@@ -27,7 +27,8 @@ import com.example.android.marsrealestate.network.MarsProperty
 import kotlinx.coroutines.launch
 
 
-enum class MarsApiStatus {LOADING, ERROR, DONE}
+enum class MarsApiStatus { LOADING, ERROR, DONE }
+
 /**
  * The [ViewModel] that is attached to the [OverviewFragment].
  */
@@ -43,6 +44,10 @@ class OverviewViewModel : ViewModel() {
     private val _properties = MutableLiveData<List<MarsProperty>>()
     val properties: LiveData<List<MarsProperty>>
         get() = _properties
+
+    private val _navigateToDetail = MutableLiveData<MarsProperty>()
+    val navigateToDetail: LiveData<MarsProperty>
+        get() = _navigateToDetail
 
     /**
      * Call getMarsRealEstateProperties() on init so we can display status immediately.
@@ -67,7 +72,15 @@ class OverviewViewModel : ViewModel() {
         }
     }
 
-    fun updateFilter(filter: MarsApiFilter){
+    fun updateFilter(filter: MarsApiFilter) {
         getMarsRealEstateProperties(filter)
+    }
+
+    fun displayPropertyDetails(marsProperty: MarsProperty){
+        _navigateToDetail.value = marsProperty
+    }
+
+    fun displayPropertyDetailsComplete(){
+        _navigateToDetail.value = null
     }
 }
