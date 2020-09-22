@@ -10,6 +10,14 @@ Introduction
 이 레포지터리 내의 각 샘플은 Android Fundamentals in Kotlin course에 존재하는 하나의 codelab exercise하고 연결되어 있습니다.
 
 
+공부 내용
+---
+#### 2020.09.22
+Android Fundamentals 챕터 3에서 Fragment와 Navigation에 대해서 공부했다.
+[AndroidTrivia-Starter](https://github.com/RoadtoS7/Android_Fundamentals/tree/master/AndroidTrivia-Starter)
+
+- Fragment는 액티비티 내에 존재하는 모듈화된 공간이라고 생각하면 된다.
+- Navigation은 데스티네이션간 이동을 다룬다.
 
 License
 -------
