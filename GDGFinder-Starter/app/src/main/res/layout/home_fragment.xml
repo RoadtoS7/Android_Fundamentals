@@ -42,7 +42,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/behind" />
+                />
 
             <TextView
                 android:id="@+id/title"
@@ -75,9 +75,6 @@
                 android:text="@string/gdgs_are"
                 android:textColor="#FF555555"
                 android:textSize="18sp"
-                android:textAllCaps="true"
-                android:textStyle="bold"
-                android:background="#ff9999"
                 app:layout_constraintEnd_toStartOf="@id/end_guideline"
                 app:layout_constraintStart_toEndOf="@id/start_guideline"
                 app:layout_constraintTop_toBottomOf="@+id/intro_text" />
@@ -103,7 +100,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/description"
-                app:srcCompat="@drawable/wtm" />
+                 />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/start_guideline"
