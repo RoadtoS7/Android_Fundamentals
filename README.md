@@ -19,6 +19,12 @@ Android Fundamentals 챕터 3에서 Fragment와 Navigation에 대해서 공부�
 - Fragment는 액티비티 내에 존재하는 모듈화된 공간이라고 생각하면 된다.
 - Navigation은 데스티네이션간 이동을 다룬다.
 
+#### ~2020.10.12
+Android Fundamentals 챕터를 전부 공부했다.
+
+### 2020.10.13
+Android Fundamentals에서 챕터 05.2 LiveData and LiveData observers를 복습했다.
+
 License
 -------
 
